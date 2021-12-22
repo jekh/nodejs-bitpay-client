@@ -1,0 +1,1 @@
+{"version":3,"file":"PayoutRecipient.js","sourceRoot":"","sources":["../../../src/Model/Payout/PayoutRecipient.ts"],"names":[],"mappings":";;;AAWA,MAAa,eAAe;IASxB;;;;;;;OAOG;IACH,YAAmB,KAAa,EAAE,KAAa,EAAE,eAAuB;QACpE,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;QACnB,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;QACnB,IAAI,CAAC,eAAe,GAAG,eAAe,CAAC;IAC3C,CAAC;CACJ;AAtBD,0CAsBC"}

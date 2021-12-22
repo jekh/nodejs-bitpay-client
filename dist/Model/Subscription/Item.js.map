@@ -1,0 +1,1 @@
+{"version":3,"file":"Item.js","sourceRoot":"","sources":["../../../src/Model/Subscription/Item.ts"],"names":[],"mappings":";;;AAMA,MAAa,IAAI;IAKb,YAAmB,KAAa,EAAE,QAAgB,EAAE,WAAmB;QACnE,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;QACnB,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;QACzB,IAAI,CAAC,WAAW,GAAG,WAAW,CAAC;IACnC,CAAC;CACJ;AAVD,oBAUC"}

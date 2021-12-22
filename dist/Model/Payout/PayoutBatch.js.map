@@ -1,0 +1,1 @@
+{"version":3,"file":"PayoutBatch.js","sourceRoot":"","sources":["../../../src/Model/Payout/PayoutBatch.ts"],"names":[],"mappings":";;;AA+BA,MAAa,WAAW;IAyBpB;;;;;;OAMG;IACH,YAAmB,QAAgB,EAAE,YAAiC,EAAE,cAAsB;QAC1F,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;QACzB,IAAI,CAAC,YAAY,GAAG,YAAY,CAAC;QACjC,IAAI,CAAC,cAAc,GAAG,cAAc,CAAC;IACzC,CAAC;CACJ;AArCD,kCAqCC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"BillData.js","sourceRoot":"","sources":["../../../src/Model/Subscription/BillData.ts"],"names":[],"mappings":";;;AAsBA,MAAa,QAAQ;IAmBjB,YAAmB,QAAgB,EAAE,KAAa,EAAE,OAAe,EAAE,KAAY;QAC7E,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;QACzB,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;QACnB,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;QACvB,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;IACvB,CAAC;CACJ;AAzBD,4BAyBC"}
