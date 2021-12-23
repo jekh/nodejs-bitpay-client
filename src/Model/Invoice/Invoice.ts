@@ -53,15 +53,15 @@ export interface InvoiceInterface {
     invoiceTime: number | null;
     expirationTime: number | null;
     currentTime: number | null;
-    exceptionStatus: string | null;
+    exceptionStatus: string | false | null;
     targetConfirmations: number | null;
-    transactions: InvoiceTransaction | null;
+    transactions: InvoiceTransaction[] | null;
     refundAddresses: any | null;
     refundAddressRequestPending: boolean | null;
     buyerProvidedEmail: string | null;
     invoiceBuyerProvidedInfo: InvoiceBuyerProvidedInfo;
     supportedTransactionCurrencies: SupportedTransactionCurrencies | null;
-    minerFees: MinerFees | null;
+    minerFees: Partial<MinerFees> | null;
     shopper: Shopper | null;
     billId: string | null;
     refundInfo: RefundInfo | null;
@@ -69,16 +69,16 @@ export interface InvoiceInterface {
     transactionCurrency: string | null;
     amountPaid: number | null;
     displayAmountPaid: number | null;
-    exchangeRates: Array<[string, Array<[string, number]>]> | null;
-    paymentSubtotals: Array<[string, number]> | null;
-    paymentTotals: Array<[string, number]> | null;
-    paymentDisplayTotals: Array<[string, number]> | null;
-    paymentDisplaySubTotals: Array<[string, number]> | null;
+    exchangeRates: { [currency: string]: { [currency: string]: number } } | null;
+    paymentSubtotals: { [currency: string]: number } | null;
+    paymentTotals: { [currency: string]: number } | null;
+    paymentDisplayTotals: { [currency: string]: string } | null;
+    paymentDisplaySubTotals: { [currency: string]: string } | null;
     nonPayProPaymentReceived: boolean | null;
     jsonPayProRequired: boolean | null;
     underpaidAmount: number | null;
     overpaidAmount: number | null;
-    paymentCodes: Array<[string, Array<[string, number]>]> | null;
+    paymentCodes: { [currency: string]: { [paymentCode: string]: string } } | null;
 }
 
 export class Invoice implements InvoiceInterface {
@@ -126,15 +126,15 @@ export class Invoice implements InvoiceInterface {
     invoiceTime: number | null;
     expirationTime: number | null;
     currentTime: number | null;
-    exceptionStatus: string | null;
+    exceptionStatus: string | false | null;
     targetConfirmations: number | null;
-    transactions: InvoiceTransaction | null;
+    transactions: InvoiceTransaction[] | null;
     refundAddresses: any | null;
     refundAddressRequestPending: boolean | null;
     buyerProvidedEmail: string | null;
     invoiceBuyerProvidedInfo: InvoiceBuyerProvidedInfo;
     supportedTransactionCurrencies: SupportedTransactionCurrencies | null;
-    minerFees: MinerFees | null;
+    minerFees: Partial<MinerFees> | null;
     shopper: Shopper | null;
     billId: string | null;
     refundInfo: RefundInfo | null;
@@ -142,16 +142,16 @@ export class Invoice implements InvoiceInterface {
     transactionCurrency: string | null;
     amountPaid: number | null;
     displayAmountPaid: number | null;
-    exchangeRates: Array<[string, Array<[string, number]>]> | null;
-    paymentSubtotals: Array<[string, number]> | null;
-    paymentTotals: Array<[string, number]> | null;
-    paymentDisplayTotals: Array<[string, number]> | null;
-    paymentDisplaySubTotals: Array<[string, number]> | null;
+    exchangeRates: { [currency: string]: { [currency: string]: number } } | null;
+    paymentSubtotals: { [currency: string]: number } | null;
+    paymentTotals: { [currency: string]: number } | null;
+    paymentDisplayTotals: { [currency: string]: string } | null;
+    paymentDisplaySubTotals: { [currency: string]: string } | null;
     nonPayProPaymentReceived: boolean | null;
     jsonPayProRequired: boolean | null;
     underpaidAmount: number | null;
     overpaidAmount: number | null;
-    paymentCodes: Array<[string, Array<[string, number]>]> | null;
+    paymentCodes: { [currency: string]: { [paymentCode: string]: string } } | null;
 
     /**
      * Constructor, create a minimal request Invoice object.
