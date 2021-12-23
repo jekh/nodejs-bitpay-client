@@ -68,7 +68,7 @@ export interface InvoiceInterface {
     extendedNotifications: boolean | null;
     transactionCurrency: string | null;
     amountPaid: number | null;
-    displayAmountPaid: number | null;
+    displayAmountPaid: string | null;
     exchangeRates: { [currency: string]: { [currency: string]: number } } | null;
     paymentSubtotals: { [currency: string]: number } | null;
     paymentTotals: { [currency: string]: number } | null;
@@ -141,7 +141,7 @@ export class Invoice implements InvoiceInterface {
     extendedNotifications: boolean | null;
     transactionCurrency: string | null;
     amountPaid: number | null;
-    displayAmountPaid: number | null;
+    displayAmountPaid: string | null;
     exchangeRates: { [currency: string]: { [currency: string]: number } } | null;
     paymentSubtotals: { [currency: string]: number } | null;
     paymentTotals: { [currency: string]: number } | null;
