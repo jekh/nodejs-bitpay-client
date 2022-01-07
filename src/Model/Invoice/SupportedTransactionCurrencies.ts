@@ -1,11 +1,14 @@
 import {SupportedTransactionCurrency} from "./SupportedTransactionCurrency";
 
 export interface SupportedTransactionCurrencies {
-    btc: SupportedTransactionCurrency;
-    bch: SupportedTransactionCurrency;
-    eth: SupportedTransactionCurrency;
-    usdc: SupportedTransactionCurrency;
-    gusd: SupportedTransactionCurrency;
-    pax: SupportedTransactionCurrency;
-    xrp: SupportedTransactionCurrency;
+    BTC: SupportedTransactionCurrency;
+    BCH: SupportedTransactionCurrency;
+    ETH: SupportedTransactionCurrency;
+    GUSD: SupportedTransactionCurrency;
+    PAX: SupportedTransactionCurrency;
+    BUSD: SupportedTransactionCurrency;
+    USDC: SupportedTransactionCurrency;
+    XRP: SupportedTransactionCurrency;
+    DOGE: SupportedTransactionCurrency;
+    LTC: SupportedTransactionCurrency;
 }
